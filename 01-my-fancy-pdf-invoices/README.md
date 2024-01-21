@@ -16,7 +16,13 @@ mvn clean install
 
 ### Test
 
-You can use [HTTPie CLI](https://httpie.io/cli) to test out the Java Servlet:
+Run JUnit tests:
+
+```bash
+mvn test
+```
+
+While the application is running, you can use [HTTPie CLI](https://httpie.io/cli) to test out the Java servlet:
 
 ### Create invoice
 
