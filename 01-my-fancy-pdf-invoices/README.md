@@ -14,6 +14,14 @@ The project is built using Maven:
 mvn clean install
 ```
 
+### Run
+
+Run the generated fat JAR after building:
+
+```bash
+java -jar target/01-my-fancy-pdf-invoices-1.0-SNAPSHOT.jar
+```
+
 ### Test
 
 Run JUnit tests:
