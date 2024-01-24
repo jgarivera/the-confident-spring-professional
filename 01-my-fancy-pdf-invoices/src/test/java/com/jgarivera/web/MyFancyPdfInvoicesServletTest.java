@@ -22,15 +22,54 @@ import static org.mockito.Mockito.when;
 public class MyFancyPdfInvoicesServletTest {
 
     private InvoiceService invoiceService;
+    private ObjectMapper objectMapper;
     private MyFancyPdfInvoicesServlet servlet;
 
     @BeforeEach
     void setUp() {
         UserService userService = new UserService();
-        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper = new ObjectMapper();
 
         invoiceService = new InvoiceService(userService);
         servlet = new MyFancyPdfInvoicesServlet(invoiceService, objectMapper);
+    }
+
+    @Test
+    void it_retrieves_empty_invoices() throws IOException {
+        HttpServletRequest request = mock(HttpServletRequest.class);
+        HttpServletResponse response = mock(HttpServletResponse.class);
+
+        when(request.getRequestURI()).thenReturn("/invoices");
+
+        StringWriter stringWriter = new StringWriter();
+        PrintWriter writer = new PrintWriter(stringWriter);
+        when(response.getWriter()).thenReturn(writer);
+
+        servlet.doGet(request, response);
+
+        String transactionsJson = objectMapper.writeValueAsString(invoiceService.findAll());
+
+        assertEquals(transactionsJson, stringWriter.toString());
+    }
+
+    @Test
+    void it_retrieves_invoices() throws IOException {
+        invoiceService.create("arthur", 1999);
+
+        HttpServletRequest request = mock(HttpServletRequest.class);
+        HttpServletResponse response = mock(HttpServletResponse.class);
+
+        when(request.getRequestURI()).thenReturn("/invoices");
+
+        StringWriter stringWriter = new StringWriter();
+        PrintWriter writer = new PrintWriter(stringWriter);
+        when(response.getWriter()).thenReturn(writer);
+
+        servlet.doGet(request, response);
+
+        String transactionsJson = objectMapper.writeValueAsString(invoiceService.findAll());
+
+        assertEquals(transactionsJson, stringWriter.toString());
     }
 
     @Test
