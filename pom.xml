@@ -15,6 +15,7 @@
 
     <modules>
         <module>01-my-fancy-pdf-invoices</module>
+        <module>02-my-bank</module>
     </modules>
 
     <dependencyManagement>
