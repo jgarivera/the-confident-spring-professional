@@ -16,6 +16,7 @@
     <modules>
         <module>01-my-fancy-pdf-invoices</module>
         <module>02-my-bank</module>
+        <module>03-my-fancy-pdf-invoices-spring</module>
     </modules>
 
     <dependencyManagement>
@@ -39,6 +40,11 @@
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>5.9.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>6.0.9</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
