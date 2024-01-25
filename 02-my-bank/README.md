@@ -1,6 +1,6 @@
 # my-bank
 
-An exercise to create mock bank Java servlet application.
+An exercise to create a mock bank Java servlet application.
 
 It uses an embedded Tomcat server and Jackson to parse JSON data from HTTP requests.
 
