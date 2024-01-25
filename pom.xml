@@ -17,6 +17,7 @@
         <module>01-my-fancy-pdf-invoices</module>
         <module>02-my-bank</module>
         <module>03-my-fancy-pdf-invoices-spring</module>
+        <module>04-my-bank-spring</module>
     </modules>
 
     <dependencyManagement>
