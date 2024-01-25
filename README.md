@@ -13,6 +13,7 @@ Behler.
 | Java Webapps without Spring            | [01-my-fancy-pdf-invoices](01-my-fancy-pdf-invoices)               |
 | Java Webapps without Spring (Exercise) | [02-my-bank](02-my-bank)                                           |
 | Spring IoC Basics                      | [03-my-fancy-pdf-invoices-spring](03-my-fancy-pdf-invoices-spring) |
+| Spring IoC Basics (Exercise)           | [04-my-bank-spring](04-my-bank-spring)                             |
 
 ## Personal Learning Goals
 
