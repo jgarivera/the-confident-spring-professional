@@ -34,13 +34,13 @@ mvn test
 
 While the application is running, you can use [HTTPie CLI](https://httpie.io/cli) to test out the Java servlet:
 
-### Create transaction
+#### Create transaction
 
 ```bash
 http -f POST localhost:9090/transactions reference=Bob amount=9999.99
 ```
 
-### Find all transactions
+#### Find all transactions
 
 ```bash
 http localhost:9090/transactions

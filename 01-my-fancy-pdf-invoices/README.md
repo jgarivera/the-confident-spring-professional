@@ -32,13 +32,13 @@ mvn test
 
 While the application is running, you can use [HTTPie CLI](https://httpie.io/cli) to test out the Java servlet:
 
-### Create invoice
+#### Create invoice
 
 ```bash
 http -f POST localhost:8080/invoices user_id=Bob amount=1000
 ```
 
-### Find all invoices
+#### Find all invoices
 
 ```bash
 http localhost:8080/invoices
