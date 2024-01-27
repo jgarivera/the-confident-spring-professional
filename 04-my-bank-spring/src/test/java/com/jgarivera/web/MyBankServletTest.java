@@ -90,13 +90,13 @@ public class MyBankServletTest {
         List<Transaction> invoices = transactionService.findAll();
         assertEquals(1, invoices.size());
 
-        Transaction invoice = invoices.get(0);
+        Transaction transaction = invoices.get(0);
 
-        assertNotNull(invoice.getId());
-        assertNotNull(invoice.getTimestamp());
-        assertEquals(new BigDecimal("19100.25"), invoice.getAmount());
-        assertEquals("michael", invoice.getReference());
-        assertEquals("We find ways to secure your money (hopefully)", invoice.getSlogan());
+        assertNotNull(transaction.getId());
+        assertNotNull(transaction.getTimestamp());
+        assertEquals(new BigDecimal("19100.25"), transaction.getAmount());
+        assertEquals("michael", transaction.getReference());
+        assertEquals("We find ways to secure your money (hopefully)", transaction.getSlogan());
 
         writer.flush();
     }
