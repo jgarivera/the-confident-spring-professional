@@ -114,17 +114,20 @@ public class InvoicesControllerTest {
     }
 
     @Test
+    void it_validates_invoices_user_id() throws Exception {
+        mockMvc.perform(post("/invoices")
+                        .accept(MediaType.APPLICATION_JSON)
+                        .param("user_id", " ")
+                        .param("amount", "10"))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
     void it_validates_invoices_amount() throws Exception {
         mockMvc.perform(post("/invoices")
                         .accept(MediaType.APPLICATION_JSON)
                         .param("user_id", "bob")
                         .param("amount", "invalid-number"))
-                .andExpect(status().isBadRequest());
-
-        mockMvc.perform(post("/invoices")
-                        .accept(MediaType.APPLICATION_JSON)
-                        .param("user_id", " ")
-                        .param("amount", "10"))
                 .andExpect(status().isBadRequest());
 
         mockMvc.perform(post("/invoices")
