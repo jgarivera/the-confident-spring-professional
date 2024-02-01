@@ -23,3 +23,4 @@ Aside from the learning objectives on the Spring course, this repository also sh
 
 - Setting up a Maven CI pipeline
 - Unit testing using JUnit and Mockito
+- Linting using Checkstyle
