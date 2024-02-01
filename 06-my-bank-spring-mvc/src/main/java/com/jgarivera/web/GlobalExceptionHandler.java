@@ -2,8 +2,6 @@ package com.jgarivera.web;
 
 import com.jgarivera.dto.ErrorDto;
 import com.jgarivera.dto.FieldErrorDto;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;

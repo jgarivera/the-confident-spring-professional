@@ -2,7 +2,6 @@ package com.jgarivera.context;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jgarivera.MyBankApplicationLauncher;
-import com.jgarivera.service.TransactionService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

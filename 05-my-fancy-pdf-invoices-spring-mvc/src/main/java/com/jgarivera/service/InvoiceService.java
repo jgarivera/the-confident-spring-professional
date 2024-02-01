@@ -4,7 +4,6 @@ import com.jgarivera.model.Invoice;
 import com.jgarivera.model.User;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

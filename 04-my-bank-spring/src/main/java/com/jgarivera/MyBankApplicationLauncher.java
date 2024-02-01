@@ -1,6 +1,5 @@
 package com.jgarivera;
 
-import com.jgarivera.context.MyBankApplicationConfiguration;
 import com.jgarivera.web.MyBankServlet;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
