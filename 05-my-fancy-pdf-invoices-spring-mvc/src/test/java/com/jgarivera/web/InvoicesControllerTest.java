@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jgarivera.context.ApplicationConfiguration;
 import com.jgarivera.model.Invoice;
 import com.jgarivera.service.InvoiceService;
-import jakarta.servlet.ServletException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -59,7 +58,7 @@ public class InvoicesControllerTest {
     private MockMvc mockMvc;
 
     @BeforeEach
-    void setUp() throws ServletException {
+    void setUp() {
         // Get all web application beans and make them available in this test
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
