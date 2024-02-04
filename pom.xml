@@ -21,6 +21,7 @@
         <module>04-my-bank-spring</module>
         <module>05-my-fancy-pdf-invoices-spring-mvc</module>
         <module>06-my-bank-spring-mvc</module>
+        <module>07-my-fancy-pdf-invoices-spring-mvc-html</module>
     </modules>
 
     <dependencyManagement>
@@ -84,6 +85,11 @@
                 <groupId>com.jayway.jsonpath</groupId>
                 <artifactId>json-path</artifactId>
                 <version>2.9.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.thymeleaf</groupId>
+                <artifactId>thymeleaf-spring6</artifactId>
+                <version>3.1.1.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

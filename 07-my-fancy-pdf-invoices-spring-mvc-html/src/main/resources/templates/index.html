@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Hello
+    <span th:text="${username}" th:remove="tag">[Username]</span>,
+    this is the current date
+    <span th:text="${#temporals.format(currentDate, 'dd-MM-yyyy HH:mm')}">[currentDate]</span>
+</p>
+<div th:if="${username.startsWith('z')}">Your name starts with a lower-case z, unusual!</div>
+</body>
+</html>
