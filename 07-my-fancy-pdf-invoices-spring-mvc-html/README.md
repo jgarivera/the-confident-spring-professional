@@ -1,8 +1,9 @@
-# my-fancy-pdf-invoices-spring-mvc
+# my-fancy-pdf-invoices-spring-mvc-html
 
 A Spring application that is a mock invoice processing service.
 
-It uses Spring MVC, Spring Context, an embedded Tomcat server, and Jackson to parse JSON data from HTTP requests.
+It uses Thymeleaf, Spring MVC, Spring Context, an embedded Tomcat server, and Jackson to parse JSON data from HTTP
+requests.
 
 For testing, Spring Test, Hamcrest, and JSON Path libraries are used.
 
@@ -21,7 +22,7 @@ mvn clean install
 Run the generated fat JAR after building:
 
 ```bash
-java -Dspring.profiles.active=dev -jar target/05-my-fancy-pdf-invoices-spring-mvc-1.0-SNAPSHOT.jar
+java -Dspring.profiles.active=dev -jar target/07-my-fancy-pdf-invoices-spring-mvc-1.0-SNAPSHOT.jar
 ```
 
 The Spring active profile can be specified using the `spring.profiles.active` command-line parameter.
@@ -49,3 +50,16 @@ http -f POST localhost:8080/invoices user_id=Bob amount=1000
 ```bash
 http localhost:8080/invoices
 ```
+
+#### Web pages
+
+The following web pages can be viewed from the browser:
+
+- `/` - Mock home page
+    - Displays the username on the page using the `username` query parameter.
+    - Displays the current date.
+    - Displays a message when the username starts with a lower-case letter `z`.
+- `/login` - Mock login page
+    - Displays a login form with `username` and `password` fields.
+    - One is able to "log in" successfully (simply redirects to home page) when both fields are the same value.
+    - Both fields are validated and their errors are displayed in the form.
