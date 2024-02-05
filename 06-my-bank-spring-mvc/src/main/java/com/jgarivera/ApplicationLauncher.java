@@ -1,6 +1,6 @@
 package com.jgarivera;
 
-import com.jgarivera.context.MyBankApplicationConfiguration;
+import com.jgarivera.context.ApplicationConfiguration;
 import jakarta.servlet.ServletContext;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
@@ -40,7 +40,7 @@ public class ApplicationLauncher {
     private static WebApplicationContext createApplicationContext(ServletContext servletContext) {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
 
-        context.register(MyBankApplicationConfiguration.class);
+        context.register(ApplicationConfiguration.class);
         context.setServletContext(servletContext);
         context.refresh();
         context.registerShutdownHook();

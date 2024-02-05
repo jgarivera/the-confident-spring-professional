@@ -2,7 +2,7 @@ package com.jgarivera.web;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jgarivera.context.MyBankApplicationConfiguration;
+import com.jgarivera.context.ApplicationConfiguration;
 import com.jgarivera.dto.TransactionDto;
 import com.jgarivera.model.Transaction;
 import com.jgarivera.service.TransactionService;
@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = MyBankApplicationConfiguration.class)
+@ContextConfiguration(classes = ApplicationConfiguration.class)
 @WebAppConfiguration
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class TransactionControllerTest {
