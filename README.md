@@ -17,6 +17,7 @@ Behler.
 | Spring WebMVC: Rest Services             | [05-my-fancy-pdf-invoices-spring-mvc](05-my-fancy-pdf-invoices-spring-mvc)           |
 | Spring WebMVC: Rest Services  (Exercise) | [06-my-bank-spring-mvc](06-my-bank-spring-mvc)                                       |
 | Spring WebMVC: HTML Pages                | [07-my-fancy-pdf-invoices-spring-mvc-html](07-my-fancy-pdf-invoices-spring-mvc-html) |
+| Spring WebMVC: HTML Pages (Exercise)     | [08-my-bank-spring-mvc-html](08-my-bank-spring-mvc-html)                             |
 
 ## Personal Learning Goals
 
