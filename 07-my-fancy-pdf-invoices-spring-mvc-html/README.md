@@ -22,7 +22,7 @@ mvn clean install
 Run the generated fat JAR after building:
 
 ```bash
-java -Dspring.profiles.active=dev -jar target/07-my-fancy-pdf-invoices-spring-mvc-1.0-SNAPSHOT.jar
+java -Dspring.profiles.active=dev -jar target/07-my-fancy-pdf-invoices-spring-mvc-html-1.0-SNAPSHOT.jar
 ```
 
 The Spring active profile can be specified using the `spring.profiles.active` command-line parameter.

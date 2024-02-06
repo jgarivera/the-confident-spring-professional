@@ -2,7 +2,7 @@
 
 An exercise to create a mock bank Spring application.
 
-It uses Spring Context, an embedded Tomcat server, and Jackson to parse JSON data from HTTP requests.
+It uses Spring MVC, Spring Context, an embedded Tomcat server, and Jackson to parse JSON data from HTTP requests.
 
 For testing, Spring Test, Hamcrest, and JSON Path libraries are used.
 
