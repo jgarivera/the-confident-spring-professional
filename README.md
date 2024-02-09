@@ -18,11 +18,12 @@ Behler.
 | Spring WebMVC: Rest Services  (Exercise) | [06-my-bank-spring-mvc](06-my-bank-spring-mvc)                                       |
 | Spring WebMVC: HTML Pages                | [07-my-fancy-pdf-invoices-spring-mvc-html](07-my-fancy-pdf-invoices-spring-mvc-html) |
 | Spring WebMVC: HTML Pages (Exercise)     | [08-my-bank-spring-mvc-html](08-my-bank-spring-mvc-html)                             |
+| Spring Database Access                   | [09-my-fancy-pdf-invoices-spring-jdbc](09-my-fancy-pdf-invoices-spring-jdbc)         |
 
 ## Personal Learning Goals
 
 Aside from the learning objectives on the Spring course, this repository also shows my learnings about:
 
 - Setting up a Maven CI pipeline
-- Unit testing using JUnit and Mockito
+- Testing using JUnit and Mockito
 - Linting using Checkstyle
