@@ -23,6 +23,7 @@
         <module>06-my-bank-spring-mvc</module>
         <module>07-my-fancy-pdf-invoices-spring-mvc-html</module>
         <module>08-my-bank-spring-mvc-html</module>
+        <module>09-my-fancy-pdf-invoices-spring-jdbc</module>
     </modules>
 
     <dependencyManagement>
@@ -91,6 +92,16 @@
                 <groupId>org.thymeleaf</groupId>
                 <artifactId>thymeleaf-spring6</artifactId>
                 <version>3.1.1.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>2.1.214</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>6.0.9</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

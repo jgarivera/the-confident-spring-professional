@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div th:if="${invalidCredentials}" style="background-color: red;">
+    Sorry, <span th:text="${loginForm.username}">[username]</span>, that doesn't look like you!
+</div>
+
+<form th:action="@{/login}" th:object="${loginForm}" method="post">
+    <p>Username: <input type="text" th:field="*{username}"/></p>
+    <p style="background-color:red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></p>
+
+    <p>Password: <input type="password" th:field="*{password}"/></p>
+    <p style="background-color:red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></p>
+
+    <p><input type="submit" value="Submit"/></p>
+</form>
+</body>
+</html>
