@@ -22,6 +22,7 @@ import java.util.List;
 
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -86,7 +87,8 @@ public class InvoicesControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].user_id", is("arthur")))
-                .andExpect(jsonPath("$[0].amount", is(1999)));
+                .andExpect(jsonPath("$[0].amount", is(1999)))
+                .andExpect(jsonPath("$[0].pdf_url", notNullValue()));
     }
 
     @Test
