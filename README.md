@@ -8,6 +8,9 @@ Behler.
 
 ## Projects
 
+The table below showcases the projects I made with the course. The non-exercise projects are more heavily commented with
+my thoughts and learnings.
+
 | Module                                   | Project                                                                              |
 |------------------------------------------|--------------------------------------------------------------------------------------|
 | Java Webapps without Spring              | [01-my-fancy-pdf-invoices](01-my-fancy-pdf-invoices)                                 |
