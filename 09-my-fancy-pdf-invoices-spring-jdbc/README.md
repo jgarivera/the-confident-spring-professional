@@ -3,9 +3,7 @@
 A Spring application that is a mock invoice processing service.
 
 It uses Spring JDBC, Thymeleaf, Spring MVC, Spring Context, an embedded Tomcat server, H2 database, and Jackson to parse
-JSON data
-from HTTP
-requests.
+JSON data from HTTP requests.
 
 For testing, Spring Test, Hamcrest, and JSON Path libraries are used.
 
