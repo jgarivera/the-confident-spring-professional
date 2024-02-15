@@ -24,6 +24,7 @@
         <module>07-my-fancy-pdf-invoices-spring-mvc-html</module>
         <module>08-my-bank-spring-mvc-html</module>
         <module>09-my-fancy-pdf-invoices-spring-jdbc</module>
+        <module>10-my-bank-spring-jdbc</module>
     </modules>
 
     <dependencyManagement>
@@ -66,6 +67,11 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-xml</artifactId>
+                <version>2.15.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>2.15.0</version>
             </dependency>
             <dependency>
