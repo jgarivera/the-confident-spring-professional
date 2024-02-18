@@ -25,6 +25,7 @@
         <module>08-my-bank-spring-mvc-html</module>
         <module>09-my-fancy-pdf-invoices-spring-jdbc</module>
         <module>10-my-bank-spring-jdbc</module>
+        <module>11-my-fancy-pdf-invoices-spring-boot</module>
     </modules>
 
     <dependencyManagement>
