@@ -23,6 +23,7 @@ my thoughts and learnings.
 | Spring WebMVC: HTML Pages (Exercise)     | [08-my-bank-spring-mvc-html](08-my-bank-spring-mvc-html)                             |
 | Spring Database Access                   | [09-my-fancy-pdf-invoices-spring-jdbc](09-my-fancy-pdf-invoices-spring-jdbc)         |
 | Spring Database Access (Exercise)        | [10-my-bank-spring-jdbc](10-my-bank-spring-jdbc)                                     |
+| Spring Boot Basics                       | [11-my-fancy-pdf-invoices-spring-boot](11-my-fancy-pdf-invoices-spring-boot)         |
 
 ## Personal Learning Goals
 
