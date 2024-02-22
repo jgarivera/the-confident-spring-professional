@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.sql.PreparedStatement;
@@ -29,11 +30,13 @@ public class TransactionService {
         this.slogan = slogan;
     }
 
+    @Transactional
     public List<Transaction> findAll() {
         return jdbcTemplate.query("SELECT * FROM transactions",
                 (resultSet, rowNum) -> createFromResultSet(resultSet));
     }
 
+    @Transactional
     public List<Transaction> findAllFromUser(String userId) {
         return jdbcTemplate.query("SELECT * FROM transactions WHERE receiving_user_id = ?",
                 (resultSet, rowNum) -> createFromResultSet(resultSet), userId);
@@ -49,6 +52,7 @@ public class TransactionService {
         return new Transaction(id, amount, reference, receivingUserId, timestamp, slogan);
     }
 
+    @Transactional
     public Transaction create(BigDecimal amount, String reference, String receivingUserId) {
         LocalDateTime timestampNow = LocalDateTime.now();
         KeyHolder keyHolder = new GeneratedKeyHolder();
