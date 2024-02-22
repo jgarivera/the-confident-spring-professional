@@ -24,6 +24,7 @@ my thoughts and learnings.
 | Spring Database Access                   | [09-my-fancy-pdf-invoices-spring-jdbc](09-my-fancy-pdf-invoices-spring-jdbc)         |
 | Spring Database Access (Exercise)        | [10-my-bank-spring-jdbc](10-my-bank-spring-jdbc)                                     |
 | Spring Boot Basics                       | [11-my-fancy-pdf-invoices-spring-boot](11-my-fancy-pdf-invoices-spring-boot)         |
+| Spring Boot Basics (Exercise)            | [12-my-bank-spring-boot](12-my-bank-spring-boot)                                     |
 
 ## Personal Learning Goals
 
