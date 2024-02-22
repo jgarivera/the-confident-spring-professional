@@ -22,7 +22,7 @@ mvn clean install
 Run the generated fat JAR after building:
 
 ```bash
-java -Dserver.port=9090 -jar target/19-my-bank-spring-jdbc-1.0-SNAPSHOT.jar
+java -Dserver.port=9090 -jar target/10-my-bank-spring-jdbc-1.0-SNAPSHOT.jar
 ```
 
 The Tomcat server port can be specified using the `server.port` command-line parameter.
