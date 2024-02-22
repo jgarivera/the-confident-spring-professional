@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Transactions</title>
+</head>
+<body>
+<h1>Account Transactions</h1>
+
+<div>
+    <p th:if="${successfulTransaction}">Transaction successfully created</p>
+
+    <form th:action="@{/account/{id}(id=${userId})}" th:object="${transactionForm}" method="post">
+        <p>
+            Receiving User ID:
+            <input type="text" th:field="*{receivingUserId}"/>
+            <span style="background-color:red" th:if="${#fields.hasErrors('receivingUserId')}"
+                  th:errors="*{receivingUserId}"></span>
+        </p>
+        <p>
+            Amount:
+            <input type="number" step="0.01" th:field="*{amount}"/>
+            <span style="background-color:red" th:if="${#fields.hasErrors('amount')}"
+                  th:errors="*{amount}"></span>
+        </p>
+        <p>
+            Reference:
+            <input type="text" th:field="*{reference}"/>
+            <span style="background-color:red" th:if="${#fields.hasErrors('reference')}"
+                  th:errors="*{reference}"></span>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</div>
+<div>
+    <p>
+        Here are the transactions that are intended for the recipient:
+        <span th:text="${userId}" th:remove="tag">[Username]</span>
+    </p>
+
+    <br>
+
+    <div th:if="${transactions.empty}">
+        <p>No transactions found</p>
+    </div>
+
+    <div th:if="${transactions.size > 0}">
+        <table>
+            <tr>
+                <th>Receiving User</th>
+                <th>Amount</th>
+                <th>Reference</th>
+            </tr>
+
+            <tr th:each="transaction : ${transactions}">
+                <td th:text="${transaction.receivingUserId}"/>
+                <td th:text="${#numbers.formatCurrency(transaction.amount)}"/>
+                <td th:text="${transaction.reference}"/>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
