@@ -4,7 +4,8 @@ A Spring Boot application that is a mock invoice processing service.
 
 This project is generated using [Spring Initialzr](https://start.spring.io/).
 
-It uses an H2 in-memory database and the Web, Validation, and JDBC starters.
+It uses an H2 in-memory database with [vibur-spring-boot-starter](../13-vibur-spring-boot-starter) custom
+auto-configuration and the Web, Validation, and JDBC starters.
 
 For testing, Spring Test, Hamcrest, and JSON Path libraries are used.
 
@@ -30,9 +31,19 @@ java -jar target/11-my-fancy-pdf-invoices-spring-boot-1.0-SNAPSHOT.jar
 
 The following are used to configure the H2 datasource in the `application.properties`:
 
+##### Using HikariCP
+
+- `spring.datasource.driver-class-name`
 - `spring.datasource.url` - connection string of the data source
 - `spring.datasource.user`
 - `spring.datasource.password`
+
+##### Using Vibur
+
+- `vibur.datasource.driver-class-name`
+- `vibur.datasource.url` - connection string of the data source
+- `vibur.datasource.user`
+- `vibur.datasource.password`
 
 The `schema.sql` script in the `resources` folder is executed to create the `invoices` table in the database.
 
