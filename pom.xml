@@ -28,6 +28,7 @@
         <module>11-my-fancy-pdf-invoices-spring-boot</module>
         <module>12-my-bank-spring-boot</module>
         <module>13-vibur-spring-boot-starter</module>
+        <module>14-my-fancy-pdf-invoices-spring-data-jdbc</module>
     </modules>
 
     <dependencyManagement>
