@@ -27,6 +27,7 @@ projects are more heavily commented with my thoughts and learnings.
 | Spring Boot Basics (Exercise)            | [12-my-bank-spring-boot](12-my-bank-spring-boot)                                       |
 | Spring Boot: Internals                   | [13-vibur-spring-boot-starter](13-vibur-spring-boot-starter)                           | 
 | Spring Data JDBC                         | [14-my-fancy-pdf-invoices-spring-data-jdbc](14-my-fancy-pdf-invoices-spring-data-jdbc) |
+| Spring Data JDBC (Exercise)              | [15-my-bank-spring-data-jdbc](15-my-bank-spring-data-jdbc)                             |
 
 ## Personal Learning Goals
 
