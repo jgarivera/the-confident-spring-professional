@@ -6,6 +6,8 @@ This repository is a Maven multi-module project aggregated. It contains my learn
 taking [The Confident Spring Professional](https://www.marcobehler.com/courses/spring-professional) course by Marco
 Behler.
 
+I wrote a blog post about my insights from the course [here](https://jgarivera.com/posts/learnings-first-spring-course).
+
 ## Projects
 
 The table below showcases the projects I made with the course. Each project is a Maven submodule. The non-exercise
